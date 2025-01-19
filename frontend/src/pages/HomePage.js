@@ -116,7 +116,7 @@ const HomePage = () => {
               style={{ width: "100%", height: "100%" }}
               onClick={() => handleGameSelection(games[currentImageIndex])}
             />
-            {gameName === games[currentImageIndex] && modeOption()};
+            {gameName === games[currentImageIndex] && modeOption()}
           </div>
           <div className="leftSideButton">
             <button onClick={handlePrevImage} className='btn bg-transparent border-0 text-yellow-400 rounded-full btn-active hover:text-yellow-500'>
