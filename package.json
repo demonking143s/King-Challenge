@@ -1,0 +1,15 @@
+{
+  "name": "kingchallenge",
+  "version": "1.0.0",
+  "description": "Hello everyone my King Challenge project was very useful who wants to make a board game related project",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "build": "npm install --include=dev --prefix backend && npm install --include=dev --prefix frontend && npm run build --prefix frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

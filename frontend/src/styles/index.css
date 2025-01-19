@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.flexible-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pieces-container {
+  display: flex;
+  gap:3%;
+}
+
+.captured-pieces {
+  text-align: center;
+}
+
+.black-captured {
+  order: 1;
+}
+
+.white-captured {
+  order: 3;
+}
+
+.turn {
+  order: 2;
+  text-align: center;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 450px) {
+  .flexible-container{
+    flex-direction: column;
+    justify-content: start; 
+  }
+}
+
+.game-board {
+  margin-bottom: 20px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 1px solid #999;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.square:focus {
+  background: #ddd;
+}
+
+.tableContainer {
+ width: 100%;
+}
+
+.tableSet {
+  width: 100%;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 10% 70% 10% 10%;
+  gap: 0px;
+}
+
+.rankColumn{
+  grid-column: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rankColumn:hover {
+  overflow:visible;
+}
+
+.playerNameColumn{
+  grid-column: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playerNameColumn:hover {
+  overflow:visible;
+}
+
+.totalMatchesColumn{
+  grid-column: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.totalMatchesColumn:hover {
+  overflow:visible;
+}
+
+.winsColumn{
+  grid-column: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.winsColumn:hover {
+  overflow:visible;
+}
+
+.tableHead,.tableData,.tableSet {
+  border:1px solid #000;
+  font-family: serif;
+}
+
+.tableData {
+  background-color: #3d82f6;
+}
+
+.tableHead{
+  background-color: #2563eb;
+}
+
+p{
+  text-indent: 2%;
+}

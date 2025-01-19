@@ -1,0 +1,71 @@
+# Node modules (for both backend and frontend)
+node_modules/
+/node_modules/
+# Logs
+logs/
+*.log
+*.log.*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment files (if you are using them)
+.env
+.env.local
+.env.*.local
+
+# Build output (React front-end build output)
+build/
+/build/
+dist/
+public/
+
+
+# npm package lock files (optional if using Yarn or other package manager)
+#package-lock.json
+
+# Temporary files
+tmp/
+*.swp
+*.swo
+
+# IDE or editor specific files (e.g., VSCode, JetBrains IDEs)
+.vscode/
+.idea/
+
+# Tailwind CSS JIT generated files (if you are using Tailwind with JIT mode)
+#.tailwind/
+
+# Coverage directory (for test reports)
+coverage/
+
+# Ignore the client side build folder (if you build the client side separately)
+#client/build/
+
+# Ignore configuration files for tools like Webpack, Babel, etc.
+webpack.config.js
+babel.config.js
+
+# React-specific files and folders
+node_modules/
+
+# Ignore Socket.IO specific files if generated
+#socket-client/
+
+# Chess.js or React Chessboard build folders (if applicable)
+#chessboard-build/
+
+# Any other temporary or compiled files for your chess application
+*.compiled.js
+*.min.js
+
+# Other potential exclusion for frontend/backend
+/frontend/node_modules
+/frontend/build
+/backend/node_modules
+/backend/.env
+/.env
+/node_modules
+.env
+/.env/
