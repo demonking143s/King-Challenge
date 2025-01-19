@@ -19,7 +19,6 @@ Thumbs.db
 build/
 /build/
 dist/
-public/
 
 
 # npm package lock files (optional if using Yarn or other package manager)
