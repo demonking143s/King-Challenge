@@ -134,11 +134,11 @@ body {
 }
 
 .tableData {
-  background-color: #3d82f6;
+  background-color: transparent;
 }
 
 .tableHead{
-  background-color: #2563eb;
+  background-color: transparent;
 }
 
 p{

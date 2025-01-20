@@ -5,9 +5,9 @@ import { Chessboard } from "react-chessboard";
 import { Chess } from "chess.js";
 import { io } from "socket.io-client"; // Use socket in frontend
 
-import { url } from "../utils/url.js"; // For connect socket with frontend
+import { baseUrl } from "../utils/url.js"; // For connect socket with frontend
 
-const socket = io("https://king-challenge.onrender.com");
+const socket = io(`${baseUrl}/chess`);
 
 //piecesSymbols for show in the captured pieces
 const pieceSymbols = {
