@@ -74,6 +74,6 @@ if(process.env.NODE_ENV === "production"){
 }
 
 // Run a server
-app.listen(PORT,()=>{
+server.listen(PORT,()=>{
   console.log(`The server is running on port: http://localhost:${PORT}`)
 })
