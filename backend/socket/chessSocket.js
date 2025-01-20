@@ -8,7 +8,7 @@ const games = {};
 let No_Player = 1;
 
 export default (socketIO) => {
-const chessNamespace = socketIO.of('/chess');
+const chessNamespace = socketIO.of('/');
 chessNamespace.on("connection", (socket)=>{
   console.log(`User connected: ${socket.id}`);
 

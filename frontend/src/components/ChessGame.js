@@ -7,7 +7,7 @@ import { io } from "socket.io-client"; // Use socket in frontend
 
 import { url } from "../utils/url.js"; // For connect socket with frontend
 
-const socket = io("https://king-challenge.onrender.com/chess");
+const socket = io("https://king-challenge.onrender.com");
 
 //piecesSymbols for show in the captured pieces
 const pieceSymbols = {
