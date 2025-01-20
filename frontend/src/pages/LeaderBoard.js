@@ -40,7 +40,7 @@ const LeaderBoard = () => {
       <div className='flex justify-between'>
       <h1 className='font-bold font-serif text-lg md:text-2xl lg:text-4xl text-white'>LeaderBoard</h1>
         <button onClick={(e)=>{
-          e.preventDefault();}} className='flex justify-end font-bold font-serif text-lg md:text-2xl lg:text-4xl'>
+          e.preventDefault();}} className='flex justify-end font-bold font-serif text-lg md:text-2xl lg:text-4xl text-white'>
           <Link to="/">
             <RxCross2 />
           </Link>
@@ -48,11 +48,11 @@ const LeaderBoard = () => {
       </div>
       <div className='flex justify-between'>
         <label className='font-bold font-serif text-base md:text-xl lg:text-3xl text-white'>Choose Game:</label>
-        <select value={game} onChange={(e)=> setGame(e.target.value)} className='bg-transparent font-bold font-serif text-base md:text-xl lg:text-3xl'>
+        <select value={game} onChange={(e)=> setGame(e.target.value)} className='bg-transparent text-white font-bold font-serif text-base md:text-xl lg:text-3xl'>
           <option value="chess">Chess</option>
         </select>
         <label className='font-bold font-serif text-base md:text-xl lg:text-3xl text-white'>Sort By:</label>
-        <select value={sortBy} onChange={(e)=> setSortBy(e.target.value)} className='bg-transparent font-bold font-serif text-base md:text-xl lg:text-3xl'>
+        <select value={sortBy} onChange={(e)=> setSortBy(e.target.value)} className='bg-transparent text-white font-bold font-serif text-base md:text-xl lg:text-3xl'>
           <option value="win">Win</option>
           <option value="totalMatch">Total Match</option>
         </select>
