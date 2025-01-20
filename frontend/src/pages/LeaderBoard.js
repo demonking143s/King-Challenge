@@ -27,7 +27,6 @@ const LeaderBoard = () => {
         if(!res.ok){
           throw new Error(data.error || "something went wrong")
         }
-        console.log(data)
         return data;
       } catch (error) {
         throw error;
