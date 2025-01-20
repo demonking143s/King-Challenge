@@ -129,8 +129,9 @@ body {
 }
 
 .tableHead,.tableData,.tableSet {
-  border:1px solid #000;
+  border: 1px solid #fff;
   font-family: serif;
+  color: #fff;
 }
 
 .tableData {

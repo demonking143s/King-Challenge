@@ -38,13 +38,11 @@
 
   .navBarProperties {
     display: flex;
-    padding-top: 2%;
   }
 
   .header {
     display: flex;
-    padding: 1%;
-    padding-left: 2%;
+    padding: 0.5%;
   }
   
   
