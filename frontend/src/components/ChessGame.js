@@ -56,6 +56,7 @@ const ChessGame = () => {
 
     socket.on('color', (color) => {
       setPlayerColor(color);  // Set player's color
+      console.log(color)
       setTurn(color === 'white' ? 'white' : 'black');
     });
 
