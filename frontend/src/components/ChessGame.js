@@ -50,6 +50,8 @@ const ChessGame = () => {
   useEffect(() => {
     socket.emit('joinGame', gameId);
 
+    console.log("connected on online game in room", gameId);
+
     socket.emit('userLogin', userId);
 
     socket.on('color', (color) => {

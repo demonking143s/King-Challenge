@@ -65,6 +65,7 @@ const HomePage = () => {
 
   const enterRoom = (e) => {
     e.preventDefault();
+    console.log("welcome to room", roomId)
     navigate(`/${gameName}/${authUser._id}`, { state: { gameMode: "online", gameId: roomId } });
   };
 
