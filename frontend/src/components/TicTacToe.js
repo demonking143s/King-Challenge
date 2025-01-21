@@ -8,7 +8,7 @@ let roundCount = 1;
 // Make a squres for board
 const Square = ({ value, onClick }) => {
   return (
-    <button className="square" onClick={onClick}>
+    <button className="square text-black" onClick={onClick}>
       {value}
     </button>
   );

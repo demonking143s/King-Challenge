@@ -102,7 +102,7 @@ const HomePage = () => {
         <div className="homePage">
           <div className="navBar">
             <header className="header font-bold text-lg md:text-2xl lg:text-4xl font-serif">
-              <h1>King Challenge</h1>
+              <h1 className="text-white">King Challenge</h1>
             </header>
             <div className="navBarProperties">
               <Link to={`/profile/${authUser.playername}`}><IoPersonCircleSharp className="text-[1.3em] mr-2"/></Link>
@@ -143,8 +143,8 @@ const HomePage = () => {
                 />
                 <button type="submit" className="mt-2 bg-transparent border-0 font-serif text-black font-bold sm:text-base md:text-lg lg:text-xl">Submit</button>
               </form>
-              <p className="sm:text-base md:text-lg text-black lg:text-xl">Tips: share your room id to your friends for play with them</p>
             </div>
+            <p className="sm:text-base md:text-lg text-black lg:text-xl">Tips: share your room id to your friends for play with them</p>
           </div>
         </div>
       )}

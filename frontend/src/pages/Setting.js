@@ -45,7 +45,7 @@ const Setting = () => {
       <div className='flex justify-between'>
         <h1 className='font-bold font-serif text-xl md:text-3xl lg:text-5xl'>Setting</h1>
         <button onClick={(e)=>{
-          e.preventDefault();}} className='flex justify-end font-bold font-serif text-lg md:text-2xl lg:text-4xl'>
+          e.preventDefault();}} className='flex justify-end font-bold font-serif text-black text-lg md:text-2xl lg:text-4xl'>
           <Link to="/">
             <RxCross2 />
           </Link>
