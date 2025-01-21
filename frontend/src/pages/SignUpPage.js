@@ -68,11 +68,11 @@ const SignUpPage = () => {
   return (
     <div className='flex justify-center items-center h-screen w-screen bg-blue-400'>
         <div className='max-w-sm mx-auto p-4 m-4 bg-blue-200 rounded-xl shadow-lg flex flex-col items-center'>
-            <h1 className='text-lg md:text-2xl lg:text-4xl font-serif'>
+            <h1 className='text-lg md:text-2xl lg:text-4xl font-serif text-black'>
                 Sign Up
             </h1>
             <form onSubmit={handleSubmit}>
-                <label className='input input-bordered input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
+                <label className='bg-white text-black input input-bordered input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
                     <input
                         type='email'
                         className='grow font-serif'
@@ -82,7 +82,7 @@ const SignUpPage = () => {
                         value={formData.email}
                     />
                 </label>
-                <label className='input input-bordered input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
+                <label className='input input-bordered bg-white text-black input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
                     <input
                         type= 'text'
                         className='grow font-serif'
@@ -92,7 +92,7 @@ const SignUpPage = () => {
                         value={formData.playername}
                     />
                 </label>
-                <label className='input input-bordered input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
+                <label className='input input-bordered bg-white text-black input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
                     <input
                         type= 'password'
                         className='grow font-serif'
@@ -107,8 +107,8 @@ const SignUpPage = () => {
                 </button>
                 {isError && <p className='text-red-500 sm:text-sm md:text-base lg:text:lg font-serif'>{error.message}</p>}
             </form>
-            <p className='sm:text-sm md:text-base lg:text:lg font-serif'>Already have a account</p>
-            <button className='btn btn-xs font-serif bg-green-500 hover:bg-green-600 active:bg-green-700 md:text-xs lg:text-sm'>
+            <p className='sm:text-sm md:text-base lg:text:lg text-black font-serif'>Already have a account</p>
+            <button className='btn btn-xs font-serif bg-green-500 text-black hover:bg-green-600 active:bg-green-700 md:text-xs lg:text-sm'>
             <Link to='/login'>Log in</Link>
             </button>
         </div>

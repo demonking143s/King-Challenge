@@ -69,11 +69,11 @@ const LoginPage = () => {
   return (
     <div className='flex justify-center items-center h-screen w-screen bg-blue-400'>
         <div className='max-w-sm mx-auto p-4 m-4 bg-blue-200 rounded-lg shadow-lg flex flex-col items-center'>
-            <h1 className='text-lg md:text-2xl lg:text-4xl font-serif'>
+            <h1 className='text-lg md:text-2xl lg:text-4xl font-serif text-black'>
                 Log in
             </h1>
             <form onSubmit={handleSubmit}>
-                <label className='input input-bordered input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
+                <label className=' text-black bg-white input input-bordered input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
                     <input
                         type='email'
                         className='grow font-serif'
@@ -83,7 +83,7 @@ const LoginPage = () => {
                         value={formData.email}
                     />
                 </label>
-                <label className='input input-bordered input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
+                <label className=' text-black bg-white input input-bordered input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
                     <input
                         type= 'password'
                         className='grow font-serif'
@@ -98,8 +98,8 @@ const LoginPage = () => {
                 </button>
                 {isError && <p className='text-red-500 sm:text-sm md:text-base lg:text:lg font-serif'>{error.message}</p>}
             </form>
-            <p className='sm:text-sm md:text-base lg:text:lg font-serif'>Don't have any account</p>
-            <button className='btn btn-xs font-serif bg-green-500 hover:bg-green-600 active:bg-green-700 md:text-xs lg:text-sm'>
+            <p className='sm:text-sm md:text-base lg:text:lg font-serif text-black'>Don't have any account</p>
+            <button className='btn btn-xs font-serif text-black bg-green-500 hover:bg-green-600 active:bg-green-700 md:text-xs lg:text-sm'>
             <Link to='/signup'>Sign up</Link>
             </button>
         </div>

@@ -75,13 +75,13 @@ const EditProfileModal = () => {
         
         <div  className='max-w-sm mx-auto p-4 m-4 bg-blue-200 rounded-lg shadow-lg flex flex-col'>
         <button onClick={(e)=>{
-        e.preventDefault();}} className='flex justify-end font-bold font-serif text-lg md:text-2xl lg:text-4xl top-0 m-2'>
+        e.preventDefault();}} className='flex justify-end  text-black font-bold font-serif text-lg md:text-2xl lg:text-4xl top-0 m-2'>
           <Link to="/">
             <RxCross2 />
           </Link>
         </button>
             <form onSubmit={handleSubmit} className='flex itmes-center flex-col'>
-                <label className='input input-bordered input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
+                <label className='input bg-white text-black input-bordered input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
                     <input
                         type='email'
                         className='grow font-serif'
@@ -91,7 +91,7 @@ const EditProfileModal = () => {
                         value={formData.email}
                     />
                 </label>
-                <label className='input input-bordered input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
+                <label className='input bg-white text-black input-bordered input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
                     <input
                         type= 'text'
                         className='grow font-serif'
@@ -101,7 +101,7 @@ const EditProfileModal = () => {
                         value={formData.playername}
                     />
                 </label>
-                <label className='input input-bordered input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
+                <label className='input input-bordered bg-white text-black input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
                     <input
                         type= 'password'
                         className='grow font-serif'
@@ -111,7 +111,7 @@ const EditProfileModal = () => {
                         value={formData.currentPassword}
                     />
                 </label>
-                <label className='input input-bordered input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
+                <label className='input input-bordered bg-white text-black input-accent rounded flex items-center gap-5 sm:text-base md:text-lg lg:text-xl'>
                     <input
                         type= 'password'
                         className='grow font-serif'

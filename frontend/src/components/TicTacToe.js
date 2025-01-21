@@ -136,12 +136,12 @@ const TicTacToe = () => {
   return (
     <div className="h-screen w-screen flex items-center justify-center flex-col bg-blue-300">
       <div className="h-screen w-screen flex items-center justify-center flex-col bg-blue-300 gap-[5%]">
-        <h1 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl">chess game</h1>
+        <h1 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl text-black">chess game</h1>
         {isGameOver ? (
           <div className="flex items-center justify-center flex-col">
-            <h2 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl">Game Over</h2>
-            <h3 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl">{overallWinner}</h3>
-            <button className="btn rounded-full bg-blue-500 text-white text-sm sm:text-sm md:text-base lg:text:lg font-serif shadow-md hover:bg-blue-600 active:bg-blue-700 border-0">
+            <h2 className="font-bold font-serif  text-black text-lg md:text-2xl lg:text-4xl">Game Over</h2>
+            <h3 className="font-bold font-serif  text-black text-lg md:text-2xl lg:text-4xl">{overallWinner}</h3>
+            <button className="btn rounded-full bg-blue-500 text-black text-sm sm:text-sm md:text-base lg:text:lg font-serif shadow-md hover:bg-blue-600 active:bg-blue-700 border-0">
               <Link to='/'>Home</Link>
             </button>
           </div>
@@ -151,11 +151,11 @@ const TicTacToe = () => {
             <Board squares={squares} onClick={handleClick} />
           </div>
           <div className="info-container">
-            <h3 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl">{status}</h3>
-            <h4 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl">X Wins: {xWins}</h4>
-            <h4 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl">O Wins: {oWins}</h4>
-            <h4 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl">Ties: {ties}</h4>
-            <h4 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl">Matches Played: {matchCount}</h4>
+            <h3 className="font-bold font-serif text-black text-lg md:text-2xl lg:text-4xl">{status}</h3>
+            <h4 className="font-bold font-serif text-black text-lg md:text-2xl lg:text-4xl">X Wins: {xWins}</h4>
+            <h4 className="font-bold font-serif text-black text-lg md:text-2xl lg:text-4xl">O Wins: {oWins}</h4>
+            <h4 className="font-bold font-serif text-black text-lg md:text-2xl lg:text-4xl">Ties: {ties}</h4>
+            <h4 className="font-bold font-serif text-black text-lg md:text-2xl lg:text-4xl">Matches Played: {matchCount}</h4>
           </div>
         </div>
         )}

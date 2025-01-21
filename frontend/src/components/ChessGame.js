@@ -281,7 +281,7 @@ const ChessGame = () => {
 
   const CapturedPieces = ({ pieces }) => {
     return (
-      <div className="text-lg md:text-2xl lg:text-4xl flex flex-wrap">
+      <div className="text-lg md:text-2xl lg:text-4xl text-black flex flex-wrap">
         {pieces.map((piece, index) => (
           <div key={index}>{piece}</div>
         ))}
@@ -291,12 +291,12 @@ const ChessGame = () => {
 
   return (
     <div className="min-h-screen h-auto w-screen flex items-center justify-center flex-col bg-blue-300 gap-[5%]">
-      <h1 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl">chess game</h1>
+      <h1 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl text-black">chess game</h1>
       {isGameOver ? (
         <div className="flex items-center justify-center flex-col">
-          <h2 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl">Game Over</h2>
-          <h3 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl">{winner}</h3>
-          <button className="btn rounded-full bg-blue-500 text-white text-sm sm:text-sm md:text-base lg:text:lg font-serif shadow-md hover:bg-blue-600 active:bg-blue-700 border-0">
+          <h2 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl text-black">Game Over</h2>
+          <h3 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl text-black">{winner}</h3>
+          <button className="btn rounded-full bg-blue-500 text-black text-sm sm:text-sm md:text-base lg:text:lg font-serif shadow-md hover:bg-blue-600 active:bg-blue-700 border-0">
             <Link to='/'>Home</Link>
           </button>
         </div>
@@ -312,15 +312,15 @@ const ChessGame = () => {
           </div>
           <div className="pieces-container">
             <div className="captured-pieces black-captured">
-              <h4 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl">Black Captured:</h4>
+              <h4 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl text-black">Black Captured:</h4>
               <CapturedPieces pieces={capturedPieces.black} />
             </div>
-            <div className="turn font-bold font-serif text-lg md:text-2xl lg:text-4xl">
+            <div className="turn font-bold font-serif text-lg md:text-2xl lg:text-4xl text-black">
               {gameMode === "online" && <h2>Your Color: {playerColor} </h2>}
               <h2>Turn: {turn}</h2>
             </div>
             <div className="captured-pieces white-captured">
-              <h4 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl">White Captured:</h4>
+              <h4 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl text-black">White Captured:</h4>
               <CapturedPieces pieces={capturedPieces.white} />
             </div>
           </div>

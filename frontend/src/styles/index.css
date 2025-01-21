@@ -131,6 +131,7 @@ body {
 .tableHead,.tableData,.tableSet {
   border: 1px solid #000;
   font-family: serif;
+  color: black;
 }
 
 .tableData {
@@ -143,4 +144,9 @@ body {
 
 p{
   text-indent: 2%;
+  color:  black;
+}
+
+h1, h2, h3, h4, h5, h6, summary{
+  color: black;
 }

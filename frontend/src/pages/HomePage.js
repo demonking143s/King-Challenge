@@ -131,18 +131,19 @@ const HomePage = () => {
           </div>
           <div className="overlay flex justify-center items-center h-screen w-screen bg-blue-400">
             <div className="join max-w-sm mx-auto p-4 m-4 bg-blue-200 rounded-lg shadow-lg flex flex-col items-center">
-              <h2 className="font-bold text-lg md:text-2xl lg:text-4xl font-serif">ROOM</h2>
+              <h2 className="font-bold text-lg md:text-2xl lg:text-4xl font-serif text-black">ROOM</h2>
               <form onSubmit={enterRoom} className="place-content-center">
-                <h2 className="font-serif text-lg md:text-2xl lg:text-4xl">Enter ID:</h2>
+                <h2 className="font-serif text-lg md:text-2xl lg:text-4xl text-black">Enter ID:</h2>
                 <input
                   type='text'
                   name='roomId'
                   onChange={handleInputChange}
                   value={roomId}
-                  className="bg-transparent block sm:text-base md:text-lg lg:text-xl border-blue-600 border-2"
+                  className="bg-white block sm:text-base md:text-lg text-black lg:text-xl border-blue-600 border-2"
                 />
-                <button type="submit" className="mt-2 bg-transparent border-0 font-serif font-bold sm:text-base md:text-lg lg:text-xl">Submit</button>
+                <button type="submit" className="mt-2 bg-transparent border-0 font-serif text-black font-bold sm:text-base md:text-lg lg:text-xl">Submit</button>
               </form>
+              <p className="sm:text-base md:text-lg text-black lg:text-xl">Tips: share your room id to your friends for play with them</p>
             </div>
           </div>
         </div>
