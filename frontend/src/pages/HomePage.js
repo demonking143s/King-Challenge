@@ -8,6 +8,7 @@ import { TbSettings } from "react-icons/tb";
 import { VscGraph } from "react-icons/vsc";
 import { IoPersonCircleSharp } from "react-icons/io5";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { HiOutlineLightBulb } from "react-icons/hi";
 
 // Import images
 import chessImage from '../images/chess.jpeg';
@@ -129,7 +130,7 @@ const HomePage = () => {
               <FaArrowRight className="text-m"/>
             </button>
           </div>
-          <div className="overlay flex justify-center items-center h-screen w-screen bg-blue-400">
+          <div className="overlay flex justify-center flex-nowrap items-center h-screen w-screen bg-blue-400">
             <div className="join max-w-sm mx-auto p-4 m-4 bg-blue-200 rounded-lg shadow-lg flex flex-col items-center">
               <h2 className="font-bold text-lg md:text-2xl lg:text-4xl font-serif text-black">ROOM</h2>
               <form onSubmit={enterRoom} className="place-content-center">
@@ -144,7 +145,7 @@ const HomePage = () => {
                 <button type="submit" className="mt-2 bg-transparent border-0 font-serif text-black font-bold sm:text-base md:text-lg lg:text-xl">Submit</button>
               </form>
             </div>
-            <p className="sm:text-base md:text-lg text-black lg:text-xl">Tips: share your room id to your friends for play with them</p>
+            <p className="sm:text-base md:text-lg text-black lg:text-xl"><HiOutlineLightBulb /> share your room id to your friends for play with them</p>
           </div>
         </div>
       )}
