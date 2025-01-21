@@ -291,7 +291,7 @@ const ChessGame = () => {
 
   return (
     <div className="min-h-screen h-auto w-screen flex items-center justify-center flex-col bg-blue-300 gap-[5%]">
-      <h1 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl text-black">chess game</h1>
+      <h1 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl text-black">Chess Game</h1>
       {isGameOver ? (
         <div className="flex items-center justify-center flex-col">
           <h2 className="font-bold font-serif text-lg md:text-2xl lg:text-4xl text-black">Game Over</h2>

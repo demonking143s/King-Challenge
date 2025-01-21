@@ -105,9 +105,9 @@ const HomePage = () => {
               <h1 className="text-white">King Challenge</h1>
             </header>
             <div className="navBarProperties">
-              <Link to={`/profile/${authUser.playername}`}><IoPersonCircleSharp className="text-[1.3em] mr-2"/></Link>
-              <Link to={`/leaderboard/${authUser.playername}`}><VscGraph className="text-[1.3em] mr-2"/></Link>
-              <Link to="/setting"><TbSettings className="text-[1.3em] mr-2"/></Link>
+              <Link to={`/profile/${authUser.playername}`}><IoPersonCircleSharp className="text-[2em] mr-2"/></Link>
+              <Link to={`/leaderboard/${authUser.playername}`}><VscGraph className="text-[2em] mr-2"/></Link>
+              <Link to="/setting"><TbSettings className="text-[2em] mr-2"/></Link>
             </div>
           </div>
           <div className="gameImage">
