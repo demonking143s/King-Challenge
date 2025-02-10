@@ -115,7 +115,7 @@ const HomePage = () => {
     <div className="min-h-screen w-screen">
       {authUser && (
         <div className="homePage">
-          <div className="navBar">
+          <div className="navBar dark:text-black">
             <header className="header font-bold text-lg md:text-2xl lg:text-4xl font-serif">
               <h1 className="text-white dark:text-black">King Challenge</h1>
             </header>
