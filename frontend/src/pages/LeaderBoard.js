@@ -37,7 +37,7 @@ const LeaderBoard = () => {
   return (
     <div className='flex min-h-screen h-auto w-screen bg-blue-200 dark:bg-red-400 flex-col p-[5%] itmes-center'>
       <div className='flex justify-between'>
-      <h1 className='font-bold font-serif text-lg md:text-2xl dark:text-white lg:text-4xl'>LeaderBoard</h1>
+      <h1 className='font-bold font-serif text-lg md:text-2xl dark:text-white lg:text-4xl primary'>LeaderBoard</h1>
         <button onClick={(e)=>{
           e.preventDefault();}} className='flex justify-end font-bold font-serif text-lg text-black md:text-2xl lg:text-4xl'>
           <Link to="/">
