@@ -25,7 +25,7 @@
   .navBar {
     width: 100%;
     background-color: rgba(224, 61, 61, 0.8);
-    /*color: white;*/
+    color: white;
     position: fixed;
     top: 0;
     left: 0;

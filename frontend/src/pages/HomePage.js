@@ -24,20 +24,6 @@ const HomePage = () => {
   const [roomId, setRoomId] = useState("");
   const navigate = useNavigate();
 
-  // Theme controller
-  //const themes = ["dark", "light", "synthwave"];
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
-
-  useEffect(()=>{
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-    console.log(theme)
-  }
-
   // Array define
   const images = [chessImage, XOImage];
   const games = ["chess", "tictactoe"];
@@ -115,15 +101,14 @@ const HomePage = () => {
     <div className="min-h-screen w-screen">
       {authUser && (
         <div className="homePage">
-          <div className="navBar dark:text-black">
+          <div className="navBar">
             <header className="header font-bold text-lg md:text-2xl lg:text-4xl font-serif">
-              <h1 className="text-white dark:text-black">King Challenge</h1>
+              <h1 className="text-white">King Challenge</h1>
             </header>
             <div className="navBarProperties">
-              <input type="checkbox" value="dark" className="toggle theme-controller" checked={theme === "dark"} onChange={toggleTheme}/>
-              <Link to={`/profile/${authUser.playername}`}><IoPersonCircleSharp className="text-[2em] mr-2 dark:text-black"/></Link>
-              <Link to={`/leaderboard/${authUser.playername}`}><VscGraph className="text-[2em] mr-2 dark:text-black"/></Link>
-              <Link to="/setting"><TbSettings className="text-[2em] mr-2 dark:text-black"/></Link>
+              <Link to={`/profile/${authUser.playername}`}><IoPersonCircleSharp className="text-[2em] mr-2"/></Link>
+              <Link to={`/leaderboard/${authUser.playername}`}><VscGraph className="text-[2em] mr-2"/></Link>
+              <Link to="/setting"><TbSettings className="text-[2em] mr-2"/></Link>
             </div>
           </div>
           <div className="gameImage">
