@@ -35,7 +35,7 @@ const LeaderBoard = () => {
   });
 
   return (
-    <div className='flex min-h-screen h-auto w-screen bg-blue-200 flex-col p-[5%] itmes-center'>
+    <div className='flex min-h-screen h-auto w-screen bg-blue-200 dark:bg-red-400 flex-col p-[5%] itmes-center'>
       <div className='flex justify-between'>
       <h1 className='font-bold font-serif text-lg md:text-2xl text-black lg:text-4xl'>LeaderBoard</h1>
         <button onClick={(e)=>{
@@ -46,8 +46,8 @@ const LeaderBoard = () => {
         </button>
       </div>
       <div className='flex justify-between'>
-        <label className='font-bold font-serif text-base md:text-xl lg:text-3xl text-black'>Choose Game:</label>
-        <select value={game} onChange={(e)=> setGame(e.target.value)} className='bg-transparent font-bold font-serif text-base text-black md:text-xl lg:text-3xl'>
+        <label className='font-bold font-serif text-base md:text-xl lg:text-3xl text-black dark:text-white'>Choose Game:</label>
+        <select value={game} onChange={(e)=> setGame(e.target.value)} className='bg-transparent font-bold font-serif text-base text-black dark:text-white md:text-xl lg:text-3xl'>
           <option value="chess">Chess</option>
         </select>
         <label className='font-bold font-serif text-base md:text-xl lg:text-3xl text-black'>Sort By:</label>
