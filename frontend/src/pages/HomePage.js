@@ -121,9 +121,9 @@ const HomePage = () => {
             </header>
             <div className="navBarProperties">
               <input type="checkbox" value="dark" className="toggle theme-controller" checked={theme === "dark"} onChange={toggleTheme}/>
-              <Link to={`/profile/${authUser.playername}`}><IoPersonCircleSharp className="text-[2em] mr-2"/></Link>
-              <Link to={`/leaderboard/${authUser.playername}`}><VscGraph className="text-[2em] mr-2"/></Link>
-              <Link to="/setting"><TbSettings className="text-[2em] mr-2"/></Link>
+              <Link to={`/profile/${authUser.playername}`}><IoPersonCircleSharp className="text-[2em] mr-2 dark:text-black"/></Link>
+              <Link to={`/leaderboard/${authUser.playername}`}><VscGraph className="text-[2em] mr-2 dark:text-black"/></Link>
+              <Link to="/setting"><TbSettings className="text-[2em] mr-2 dark:text-black"/></Link>
             </div>
           </div>
           <div className="gameImage">
