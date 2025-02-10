@@ -11,7 +11,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { HiOutlineLightBulb } from "react-icons/hi";
 
 // Import images
-import chessImage from '../images/chess.jpeg';
+import chessImage from '../images/king.jpeg';
 import XOImage from '../images/tictactoe.jpeg';
 
 // Specific style for homepage
